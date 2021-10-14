@@ -1,0 +1,15 @@
+.icon {
+    height: 2rem;
+	width: 2rem;
+}
+
+.cartWidget {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+.cartWidget-number {
+		font-family: 'Lato', sans-serif;
+		min-width: 2rem;
+        color: white;
+	}

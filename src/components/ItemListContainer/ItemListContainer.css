@@ -1,0 +1,6 @@
+.listaProductos {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: blue;
+}
