@@ -1,0 +1,21 @@
+.pCount {
+    font-size: 30px;
+    background-color: blue;
+    color: #0c071a;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+}
+
+.btnCount {
+    background-color: white;
+    color: #0c071a;
+    font-size: 25px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 50px;
+}
