@@ -4,3 +4,25 @@
     background-color: white;
     color: blue;
 }
+
+.hProductos {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+  }
+
+  /* .imgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .imgContainer span {
+    font-size: 1.5rem;
+  }
+  .mainImage {
+    margin: 1rem;
+  }
+  .productsContainer {
+    display: flex;
+  } */
