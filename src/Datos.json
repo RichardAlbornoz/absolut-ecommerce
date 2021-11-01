@@ -3,54 +3,48 @@
       "id": 1,
       "title": "ABSOLUT Raspberri 750 cc",
       "price": 650,
-      "imagen": "./Img/VodkaR.jfif"
+      "imagen": "./Img/VodkaR.png"
     },
     {
       "id": 2,
       "title": "ABSOLUT India 750cc",
       "price": 850,
-      "imagen": "./Img/VodkaIndia.jfif"
+      "imagen": "./Img/VodkaIndia.png"
     },
     {
       "id": 3,
       "title": "ABSOLUT Mexico 750 cc",
       "price": 900,
-      "imagen": "./Img/VodkaMexico.jfif"
+      "imagen": "./Img/VodkaMexico.png"
     },
     {
       "id": 4,
       "title": "ABSOLUT Elyx 1000cc",
       "price": 1550,
-      "imagen": "./Img/VodkaElyx.jfif"
+      "imagen": "./Img/VodkaElyx.png"
     },
     {
       "id": 5,
       "title": "ABSOLUT Rainbow 750cc",
       "price": 900,
-      "imagen": "./Img/VodkaRainbow.jfif"
+      "imagen": "./Img/VodkaRainbow.png"
     },
     {
       "id": 6,
       "title": "ABSOLUT Oak 750cc",
       "price": 2500,
-      "imagen": "./Img/VodkaOak.jfif"
+      "imagen": "./Img/VodkaOak.png"
     },
     {
       "id": 7,
-      "nombre": "Vodka Smirnof 700 cc",
-      "price": 500,
-      "imagen": "./Img/voka.pgn"
+      "title": "ABSOLUT Pack",
+      "price": 4500,
+      "imagen": "./Img/VodkaPack.png"
     },
     {
       "id": 8,
-      "title": "ABSOLUT Pack",
-      "price": 4500,
-      "imagen": "./Img/VodkaPack.jfif"
-    },
-    {
-      "id": 9,
       "title": "ABSOLUT Combo",
       "price": 3500,
-      "imagen": "./Img/VodkaCombo.jfif"
+      "imagen": "./Img/VodkaCombo.png"
     }
   ]

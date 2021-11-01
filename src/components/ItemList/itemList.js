@@ -1,14 +1,14 @@
 import './itemList.css'
 import Item from '../Item/item';
 
-const ItemList = ({ bottle}) => {
+const ItemList = ({bottle}) => {
 
     return (
         <>
             <Item
                 title={bottle.title}
                 price={bottle.price}
-                pictureUrl={bottle.imagen}
+                imagen={bottle.imagen}
             />
         </>
     );
