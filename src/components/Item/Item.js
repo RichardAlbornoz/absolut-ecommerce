@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import StockContador from '../ItemCount/ItemCount';
+import StockContador from '../ItemCount/itemCount';
 
 const Item = ({id, title, price, imagen}) => {
 
