@@ -11,7 +11,7 @@
     font-size: 25px;
   }
 
-  /* .imgContainer {
+  .imgContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,4 +25,4 @@
   }
   .productsContainer {
     display: flex;
-  } */
+  }
