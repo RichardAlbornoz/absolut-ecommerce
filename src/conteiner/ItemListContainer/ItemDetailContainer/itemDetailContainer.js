@@ -1,12 +1,10 @@
-import ItemDetails from '../ItemDetail/itemDetail';
-import DatosProductos from '../Datos/datos.json';
+import ItemDetails from '../../../components/ItemDetail/itemDetail';
+import DatosProductos from '../../../components/Datos/datos.json';
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
 
 function ItemDetailContainer() {
-	const [itemDetail, setItemDetail] = useState(null);
-	const { itemId } = useParams();
-
+	const [productos, setProductos] = useState(null);
+	
     const getItem = (data) =>
 		new Promise((resolve, reject) => {
 			setTimeout(() => {
@@ -20,27 +18,22 @@ function ItemDetailContainer() {
 
 	useEffect(() => {
 		getItem(DatosProductos)
-			.then((res) => {
-				setItemDetail(res.find((details) => details.id === itemId));
-				console.log(ItemDetails);
-			})
-
+			.then((res) => setProductos(res))
 			.catch((err) => console.log(err));
-	}, [itemId]);
+	}, []);
 
 	return (
-		<div className='itemDetailContainer'>
-			{itemDetail ? (
-				<ItemDetails
-					key={itemDetail.id}
-					imagen={itemDetail.imagen}
-					title={itemDetail.title}
-					price={itemDetail.price}
-				/>
-			) : "Cargando los productos" (
-			)}
+		<div className="container d-flex justify-content-center align-items-center h-100">
+		  <div className="row">
+			{productos ? productos.map((producto) => (
+			  <div className="col-md-4" key={producto.id}>
+				<ItemDetails imagen={producto.foto} title={producto.title} price={producto.price} />
+			  </div>
+			))
+			: "Cargando los productos disponibles..."}
+		  </div>
 		</div>
-	);
-}
+	  );
+	}
 
 export default ItemDetailContainer;

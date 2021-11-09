@@ -1,5 +1,5 @@
 import './itemList.css'
-import ItemDetails from '../ItemDetail/itemDetail';
+import Details from '../ItemDetail/itemDetail';
 import DatosProductos from '../Datos/datos.json'
 import { useEffect, useState } from "react";
 
@@ -30,7 +30,7 @@ useEffect(() => {
           <div className="row">
             {botellas ? botellas.map((botella) => (
               <div className="col-md-4" key={botella.id}>
-                <ItemDetails foto={botella.imagen} title={botella.title} price={botella.price} />
+                <Details imagen={botella.imagen} title={botella.title} price={botella.price} />
               </div>
             ))
             : "Cargando los productos disponibles..."}

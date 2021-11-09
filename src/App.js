@@ -1,13 +1,15 @@
  import './App.css'
  import NavBar from './components/navBar/navBar';
- import ListContainer from './components/ItemListContainer/ItemListContainer';
+ import ListContainer from './conteiner/ItemListContainer/ItemListContainer/ItemListContainer';
+ import ItemDetailContainer from './conteiner/ItemListContainer/ItemDetailContainer/itemDetailContainer';
 
   function App() {
 
    return (
      <><NavBar />
      <div>
-       <ListContainer greeting="Cuantos productos quieres agregar?" /> 
+       <ListContainer greeting="Cuantos productos quieres agregar?" />
+       <ItemDetailContainer/> 
      </div></>
    );
  }
