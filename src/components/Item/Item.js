@@ -1,37 +1,19 @@
-import { useState } from 'react';
-import StockContador from '../ItemCount/itemCount';
+import { Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
-const Item = ({id, title, price, imagen}) => {
+const Item = ({producto}) =>{
 
-    const [productos, setProductos]= useState (1)
-
-    const add = () => {
-      if (productos>10) {alert ('No hay tantos productos disponibles')}
-    else {
-      setProductos (productos+1)
-    }
-    }
-    const remove = ()=>{
-      if (productos>1){
-        setProductos (productos-1)
-      } else {
-        alert ('No puedes agregar menos de 1 producto al carrito!')
-      }
-    }
-    
-    return (
-            <>
-            <div className="cardComponent">
-                <div className="imgCard">
-                    <img src={imagen} alt="" />
-                </div>
-                <h3>{title}</h3>
-                <p> {Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP' }).format(price)}</p>
-                <StockContador value={productos} sumarProducto={add} quitarProducto ={remove}/>
-                <div className="addToCart">Añadir al carrito</div>
-            </div>
-        </>
-        )
-}
+    return(
+        <Card key={producto.id} style={{ width: "18rem"}}>
+            <Link to={`/item/${producto.id}`}>
+                <Card.Img variant="top" src={producto.foto} style={{maxHeight: "200px"}}/>
+            </Link>
+            <Card.Body style={{height:"15rem", display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"space-around"}}>
+                <Card.Title>{producto.title}</Card.Title>
+                <Card.Text>$ {producto.price}</Card.Text>
+            </Card.Body>
+        </Card>
+    );
+};
 
 export default Item;
