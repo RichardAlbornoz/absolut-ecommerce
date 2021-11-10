@@ -1,9 +1,11 @@
 import ItemDetails from '../../../components/ItemDetail/itemDetail';
 import DatosProductos from '../../../components/Datos/datos.json';
 import { useEffect, useState } from 'react';
+import { useParams } from "react-router-dom";
 
 function ItemDetailContainer() {
 	const [productos, setProductos] = useState(null);
+	const{ itemID } = useParams();
 	
     const getItem = (data) =>
 		new Promise((resolve, reject) => {
@@ -20,14 +22,14 @@ function ItemDetailContainer() {
 		getItem(DatosProductos)
 			.then((res) => setProductos(res))
 			.catch((err) => console.log(err));
-	}, []);
+	}, [itemID]);
 
 	return (
 		<div className="container d-flex justify-content-center align-items-center h-100">
 		  <div className="row">
 			{productos ? productos.map((producto) => (
 			  <div className="col-md-4" key={producto.id}>
-				<ItemDetails imagen={producto.foto} title={producto.title} price={producto.price} />
+				<ItemDetails  producto ={productos} />
 			  </div>
 			))
 			: "Cargando los productos disponibles..."}
