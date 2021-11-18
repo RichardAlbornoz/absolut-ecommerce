@@ -3,48 +3,72 @@
       "id": 1,
       "title": "ABSOLUT Raspberri 750 cc",
       "price": 650,
-      "imagen": "./Img/VodkaR.png"
+      "imagen": "./Img/VodkaR.png",
+      "stock": 11,
+      "quantity": 0,
+      "total": null
     },
     {
       "id": 2,
       "title": "ABSOLUT India 750cc",
       "price": 850,
-      "imagen": "./Img/VodkaIndia.png"
+      "imagen": "./Img/VodkaIndia.png",
+      "stock": 11,
+      "quantity": 0,
+      "total": null
     },
     {
       "id": 3,
       "title": "ABSOLUT Mexico 750 cc",
       "price": 900,
-      "imagen": "./Img/VodkaMexico.png"
+      "imagen": "./Img/VodkaMexico.png",
+      "stock": 11,
+      "quantity": 0,
+      "total": null
     },
     {
       "id": 4,
       "title": "ABSOLUT Elyx 1000cc",
       "price": 1550,
-      "imagen": "./Img/VodkaElyx.png"
+      "imagen": "./Img/VodkaElyx.png",
+      "stock": 11,
+      "quantity": 0,
+      "total": null
     },
     {
       "id": 5,
       "title": "ABSOLUT Rainbow 750cc",
       "price": 900,
-      "imagen": "./Img/VodkaRainbow.png"
+      "imagen": "./Img/VodkaRainbow.png",
+      "stock": 11,
+      "quantity": 0,
+      "total": null
     },
     {
       "id": 6,
       "title": "ABSOLUT Oak 750cc",
       "price": 2500,
-      "imagen": "./Img/VodkaOak.png"
+      "imagen": "./Img/VodkaOak.png",
+      "stock": 11,
+      "quantity": 0,
+      "total": null
     },
     {
       "id": 7,
       "title": "ABSOLUT Pack",
       "price": 4500,
-      "imagen": "./Img/VodkaPack.png"
+      "imagen": "./Img/VodkaPack.png",
+      "stock": 11,
+      "quantity": 0,
+      "total": null
     },
     {
       "id": 8,
       "title": "ABSOLUT Combo",
       "price": 3500,
-      "imagen": "./Img/VodkaCombo.png"
+      "imagen": "./Img/VodkaCombo.png",
+      "stock": 11,
+      "quantity": 0,
+      "total": null
     }
   ]
