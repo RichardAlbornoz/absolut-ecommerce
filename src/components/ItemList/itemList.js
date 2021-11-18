@@ -72,17 +72,17 @@ return (
                 </li>
                 <li>
                   <a className="dropdown-item" href="/#">
-                    <b>8</b> <span style={{ fontSize: `80%` }}>(ABSOLUT Oak)</span>
+                    <b>9</b> <span style={{ fontSize: `80%` }}>(ABSOLUT Oak)</span>
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="/#">
-                    <b>8</b> <span style={{ fontSize: `80%` }}>(ABSOLUT Pack)</span>
+                    <b>10</b> <span style={{ fontSize: `80%` }}>(ABSOLUT Pack)</span>
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="/#">
-                    <b>8</b> <span style={{ fontSize: `80%` }}>(ABSOLUT Combo)</span>
+                    <b>11</b> <span style={{ fontSize: `80%` }}>(ABSOLUT Combo)</span>
                   </a>
                 </li>
   </ul>
