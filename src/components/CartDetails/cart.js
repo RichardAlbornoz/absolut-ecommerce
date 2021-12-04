@@ -2,6 +2,7 @@ import { useContext, useState, useEffect } from "react";
 import CartContext from "../../context/cart/CartContext";
 import CartItem  from "./cartItem";
 import { NavLink } from "react-router-dom";
+import { CheckOutForm } from "../Forms/CheckOutForm";
 
 const Cart = () => {
   const { cartItems, initalState } = useContext(CartContext);
