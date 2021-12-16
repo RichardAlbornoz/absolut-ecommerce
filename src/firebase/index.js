@@ -1,17 +1,19 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
-
 const firebaseConfig = {
-  apiKey: "AIzaSyAJkjipB_PmxNpYhyXFXOF_xES5wtUAFKc",
-  authDomain: "ringo-1f222.firebaseapp.com",
-  projectId: "ringo-1f222",
-  storageBucket: "ringo-1f222.appspot.com",
-  messagingSenderId: "1050737642166",
-  appId: "1:1050737642166:web:68eab89e86c5eb75513417"
-};
+    apiKey: "AIzaSyBtvmImIR-mWMwxRdUg8hvw7iwDVMM74zA",
+    authDomain: "absolut-ecommerce.firebaseapp.com",
+    projectId: "absolut-ecommerce",
+    storageBucket: "absolut-ecommerce.appspot.com",
+    messagingSenderId: "139924492295",
+    appId: "1:139924492295:web:e821fe7222f44fb9665aa2",
+    // eslint-disable-next-line no-template-curly-in-string
+    measurementId: "${config.measurementId}"
+  };
+  
+  const app = initializeApp(firebaseConfig);
 
-const app = initializeApp(firebaseConfig);
-export const getFirebase = () => app;
+  export const getFirebase = () => app;
 
-export { getFirestore };
+  export { getFirestore };

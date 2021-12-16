@@ -1,12 +1,13 @@
- import './App.css'
- import NavBar from './components/navBar/navBar';
- import ListContainer from './conteiner/ItemListContainer/ItemListContainer/ItemListContainer';
- import ItemDetailContainer from './conteiner/ItemListContainer/ItemDetailContainer/itemDetailContainer';
- import { BrowserRouter, Routes, Route } from 'react-router-dom';
- import  CartState  from './context/cart/CartState'
- import  Cart  from './components/CartDetails/cart'
+import NavBar from './components/NavBar/navBar';
+import ItemDetailContainer from './conteiner/ItemListContainer/ItemDetailContainer/itemDetailContainer';
+import ListContainer from './conteiner/ItemListContainer/ItemListContainer/ItemListContainer';
+import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import  CartState  from './context/cart/CartState'
+import  Cart  from './components/CartDetails/cart'
 
- function App() {
+
+function App() {
   return (
     <CartState>
       <BrowserRouter>
