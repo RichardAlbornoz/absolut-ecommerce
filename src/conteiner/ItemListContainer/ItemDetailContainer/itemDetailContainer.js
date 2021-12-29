@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getDoc, doc } from "firebase/firestore";
 import { getFirestore } from "../../../firebase/index";
-
+//import {getFirestore} from ""
 
 function ItemDetailContainer() {
 	const [productos, setProductos] = useState([]);

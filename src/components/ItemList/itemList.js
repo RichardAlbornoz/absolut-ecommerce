@@ -21,13 +21,13 @@ const ItemList = ({botella}) => {
 
 return ( 
 <div className="row justify-content-center col-12 col-sm-6 mb-5">
-<NavLink to={`/botella/ ${botella.id}`}><img className="card-img-top img-fluid" src={botella.imagen} alt="S" /></NavLink>
+<NavLink to="https://www.google.com/"><img className="card-img-top img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/375px-React.svg.png" alt="S" /></NavLink>
 <div className="card-body col-11">
   <p className="card-text ">
-    <b>{botella.tittle}</b>
+    <b>{/* {botella.title} */} titulo</b>
   </p>
   <p className="card-text ">
-    <b>${botella.price}</b>
+    <b>{/* {botella.price} */} precio</b>
   </p>
 </div>
 
@@ -87,7 +87,7 @@ return (
                 </li>
   </ul>
 </div>
-<StockContador inicial={0} stock={botella.stock} ID={botella.id} onAdd={onAddHandle} onIncrease={ onIncreaseHandle} texto='Agregar al carrito' />
+<StockContador inicial={0} /* stock={botella.stock}  ID={botella.id}*/ onAdd={onAddHandle} onIncrease={ onIncreaseHandle} texto='Agregar al carrito' />
 </div>
 )
   };
